@@ -65,28 +65,15 @@ wheels = [
 ]
 
 [[package]]
-name = "neovim"
-version = "0.3.1"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "pynvim" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/78/ec/ac9905ccab8774b64c37cdff9e08db320c349eda0ae3161aebcac83e5590/neovim-0.3.1.tar.gz", hash = "sha256:a6a0e7a5b4433bf4e6ddcbc5c5ff44170be7d84259d002b8e8d8fb4ee78af60f", size = 804 }
-
-[[package]]
 name = "nvim-python"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
-    { name = "neovim" },
     { name = "pynvim" },
 ]
 
 [package.metadata]
-requires-dist = [
-    { name = "neovim", specifier = ">=0.3.1" },
-    { name = "pynvim", specifier = ">=0.5.2" },
-]
+requires-dist = [{ name = "pynvim", specifier = ">=0.5.2" }]
 
 [[package]]
 name = "pynvim"

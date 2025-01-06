@@ -5,6 +5,5 @@ description = "Default python for neovim"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "neovim>=0.3.1",
     "pynvim>=0.5.2",
 ]
